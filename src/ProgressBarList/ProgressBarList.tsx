@@ -33,9 +33,9 @@ export default function ProgressBarList() {
         />
       </div>
       <div className={styles.progressBarOptions}>
-        <select onChange={onChangeHandler} className={styles.progressBar}>
+        <select role="progressBarItems" onChange={onChangeHandler} className={styles.progressBar}>
           {progressBarList.map((option: IProgressBar) => (
-            <option key= {option.id} value={option.id}>
+            <option role="option" key= {option.id} value={option.id}>
               {option.name}
             </option>
           ))}
