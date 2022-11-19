@@ -1,0 +1,12 @@
+export interface IStyleInfo {
+  width: number;
+}
+
+export interface IProgressBarInfo {
+  id: string;
+  styleDetails: IStyleInfo;
+}
+export interface IProgressBarButtonInfo {
+  id: number;
+  progressBarWidth: number;
+}
