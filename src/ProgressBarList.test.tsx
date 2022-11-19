@@ -16,9 +16,8 @@ test("should allow user to change progressBarOptions", () => {
     // Find the select element
     screen.getByRole("progressBarItems"),
     // Find and select the progressBarThree option
-    screen.getByRole("option", { name: "progressBarThree" })
+    screen.getByRole("option", { name : "progressBarThree" })
   );
-  expect(screen.getByRole("option", { name: "progressBarThree" }).selected).toBe(
-    false
-  );
+  expect(screen.getByText("progressBarThree")).toBeInTheDocument();
 });
+
