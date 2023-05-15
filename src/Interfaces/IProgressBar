@@ -1,5 +1,0 @@
-export interface IProgressBar {
-  id: number;
- name:string;
- width: string
-}
